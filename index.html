@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <ol class="nav-list">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#register">Register</a></li>
+        </ol>
+    </nav>
+
+    
+    <div id="home" class="welcome-section">
+        <h1>Welcome to Our Learning Platform</h1>
+        <p>Learn new skills and improve your knowledge.</p>
+    </div>
+
+    <div id="courses" class="courses-section">
+        <h2>Our Courses</h2>
+        <div class="courses-container">
+            
+            <!-- Course 1 -->
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Learn HTML and CSS to build websites.</p>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" alt="Programming">
+                <h3>Programming</h3>
+                <p>Learn the basics of C++ programming.</p>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600" alt="Computer Networks">
+                <h3>Computer Networks</h3>
+                <p>Learn about computer networks.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Our platform helps students learn computer skills through simple and useful courses.</p>
+    </div>
+
+    <!-- 5. Student Registration Form -->
+    <div id="register" class="registration-section">
+        <h2>Student Registration</h2>
+        <form action="#" method="post">
+            <table class="reg-table">
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td class="radio-group">
+                        <input type="radio" id="male" name="gender" value="Male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="course">Course:</label></td>
+                    <td>
+                        <select id="course" name="course">
+                            <option value="Web Development">Web Development</option>
+                            <option value="Programming">Programming</option>
+                            <option value="Computer Networks">Computer Networks</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-cell">
+                        <button type="submit" class="register-btn">Register</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-- 6. Footer -->
+    <footer class="footer">
+        <p>Copyright 2026 - Learn Online</p>
+    </footer>
+
+</body>
+</html>
